@@ -1,5 +1,6 @@
 # Geo-Quiz
 Jeu - Quel le nom de cette ville ?</br>
+7 niveaux</br>
 URL</br>
 https://infographie.sudouest.fr/GeoQuiz/index.php</br>
 https://superchick.fr/GeoQuiz/index.php</br>
