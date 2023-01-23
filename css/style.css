@@ -1,0 +1,258 @@
+/*  Imports polices
+  ------------------------------------------------------------------------------------------  */
+  @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,900');
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/*  Générique
+  ------------------------------------------------------------------------------------------  */
+ *{margin:0;
+  padding: 0;
+}
+
+html, body {
+	margin:0; 
+  padding:0; 
+  outline:0; 
+} 
+body {
+	word-wrap:break-word;
+  color:#222;
+  overflow-x:hidden;
+  margin-top: 5px;
+  text-align: center;
+  font-family: 'Lato', serif;
+}
+h1{
+  font-size: 55px;
+}
+h3{
+  font-size: 30px;
+}
+h4{
+  font-size: 20px;
+}
+hr{
+  border-top: 1px dotted black;
+  width: 80%;
+}
+input{
+  margin: 0 auto;
+}
+p{
+  width: 90%;
+  margin: 0 auto;
+}
+.consigne{
+  font-size: 15px;
+  font-style: italic;
+  display:inline;
+  background-color: #e1dede;
+  padding: 0px 20px;
+}
+.affiche{
+  display: none;
+}
+.etoiles {
+  width: 30px;
+  height: 30px;
+}
+.parent {
+  position: relative;
+}
+.child1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 0;
+}
+.child2 {
+  position: absolute;
+  z-index: 0;
+  /*margin: 30px;*/
+  opacity: 1;
+}
+.intro{
+  font-size: 17px;
+}
+.note{
+ font-size: 30px;
+ color: white;
+ text-align: center;
+ background-color: black;
+ padding: 2px 5px 2px 5px; 
+ display:inline; 
+}
+.txtGras{
+  font-weight: 700;
+}
+.txtMaigre{
+  font-weight: 300;
+}
+.comment{
+  font-size: 20px;
+}
+.visus {
+	width: 300px;
+	height: auto;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+.pastille{
+  width:35px;
+  height:35px;
+  border-radius:50%;
+  color:white;
+  background-color:black;
+  position: absolute;
+  margin: 5px 0px 0px 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.pastilleSolution{
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  color:white;
+  background-color:black;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 1.3;
+}
+.margeDroite{
+  margin-right: 10px;
+}
+.centre{
+  margin: 0 auto;
+}
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.marge{
+	margin: 10px auto;
+}
+.alert{
+    background-color: #b70202;
+    width: 60%;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    vertical-align:middle;
+    padding: 10px;
+}
+select, input[type=text]{
+    font-size: 0.9rem;
+    width: 300px;
+    height: 25px;
+    background-color: black;
+    border:solid 1px black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-top:5px;
+    padding-right: 5px; padding-left: 5px;
+}
+.boutonOn{
+  width: 190px;
+  height: 30px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.6);
+  border: 2px solid rgba(0,0,0,1);
+  color: #FFF;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.boutonOn:hover {
+  background-color: rgba(0,0,0,1);
+  border: 2px solid rgba(0,0,0,1);
+  color: #FFF;
+}
+.boutonOff{
+  width: 190px;
+  height: 30px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.3);
+  border: 2px solid rgba(0,0,0,0.3);
+  color: #FFF;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+footer{
+    width:100%;
+    height:18px;
+    background-image:url(../images/signature.svg);
+    background-repeat:no-repeat;
+    background-position:center;
+    margin-top: 10px;
+ }
+ /*  Accordeon
+  ------------------------------------------------------------------------------------------  */
+.accordion {
+  color: white;
+  background-color: #d42e1a;
+  color: #444;
+  cursor: pointer;
+  padding: 9px;
+  /*width: 100%;*/
+  border: 1px solid #fff;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  line-height: 25px;
+  /*font-weight:inherit; */
+  color:#fff;
+    transition: 0.4s;
+}
+.active, .accordion:hover {
+  background-color: #fd8071;
+}
+.accordion:after {
+  /*content: '\002B';*/
+  color: #fff;
+  /*font-weight: bold;*/
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+* {box-sizing: border-box;
+}
+.img-magnifier-container {
+  position:relative;
+}
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
+}
+
